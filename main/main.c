@@ -6,11 +6,11 @@ void app_main(void)
 {
     Display_config disp_cfg = {
         .dev_addr = 0x3C, //0x3C
-        .height_res = 64, //default for sh1106
-        .width_res = 128, //defualt for sh1106
-        .io_scl = GPIO_NUM_12,
-        .io_sda = GPIO_NUM_11,
-        .port_num = 1,
+        .height_res = 64,
+        .width_res = 128,
+        .io_scl = GPIO_NUM_6,
+        .io_sda = GPIO_NUM_7,
+        .port_num = 0,
     };
     disp_handle display = init_display(&disp_cfg);
     esp_err_t err;
